@@ -1,0 +1,21 @@
+.deal-body {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-grid {
+  height: max-content;
+  width: max-content;
+  grid-template-areas: "a a";
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .deal-grid {
+    grid-template-areas: "a";
+  }
+}

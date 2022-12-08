@@ -1,0 +1,115 @@
+.simulator-root {
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  overflow: auto;
+  --height-footer: 190px;
+  --heigtht-header: 50px;
+}
+
+.simulator-header {
+  width: 100%;
+  height: var(--heigtht-header);
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.simulator-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+.simulator-body-info {
+  margin-left: 10px;
+  position: fixed;
+  top: 58px;
+  font-weight: bold;
+  color: coral;
+}
+
+.simulator-body-warning {
+  margin-left: 10px;
+  position: fixed;
+  bottom: 200px;
+  font-weight: bold;
+  color: red;
+}
+
+.simulator-body {
+    background-color: var(--light-color);
+  position: relative;
+  width: 100%;
+  height: calc(100% - var(--height-footer) - var(--heigtht-header));
+  overflow: auto;
+}
+
+.simulator-footer {
+    background-color: var(--primary-color);
+  width: 100%;
+  height: var(--height-footer);
+  padding: 5px;
+  border-top: 1px solid var(--color-border);
+  grid-template-areas: "a a a";
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 10% 80% 10%;
+  gap: 5px;
+  padding: 10px;
+}
+
+.simulator-actions {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.simulator-action {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background-color: var(--light-color);}
+
+.simulator-input {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.simulator-submit {
+  width: 100%;
+  height: 100%;
+}
+
+.simulator-btn-submit {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background-color: var(--light-color);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .simulator-footer {
+    grid-template-areas: "a";
+    grid-template-columns: 100%;
+    grid-template-rows: 45px calc(100% - 100px) 45px;
+  }
+  .simulator-actions {
+    flex-direction: row;
+  }
+}

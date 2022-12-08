@@ -1,0 +1,35 @@
+.item-deal-root {
+  --my-deal-animation: translate;
+  min-width: 45px;
+  flex-direction: column;
+  height: 60px;
+  width: max-content;
+  border: 1px solid var(--color-border);
+}
+
+.item-deal-header {
+  align-items: center;
+  padding-left: 3px;
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.item-deal-body {
+  padding: 3px;
+  width: max-content;
+  height: 40px;
+  align-items: center;
+  gap: 3px;
+}
+
+.item-deal-mess {
+  height: 20px;
+  width: 15px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0px) translateY(0px);
+  opacity: 1;
+  transition: transform 500ms, opacity 700ms;
+}

@@ -1,0 +1,24 @@
+.group-root {
+  min-width: 300px;
+  min-height: 300px;
+  height: max-content;
+  width: max-content;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+}
+
+.group-header {
+  height: 35px;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.group-body {
+  grid-template-areas: "a a a a";
+  justify-content: space-around;
+  padding: 5px;
+  gap: 5px;
+}
